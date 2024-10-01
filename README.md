@@ -25,7 +25,7 @@ This project demonstrates JWT (JSON Web Token) generation, validation, and reiss
 ### 2. Validate JWT
 - **POST /api/v1/jwt/validation**
 - **Description:** Validates the provided access or refresh token.
-- **Request Body:**
+- **Response:**
     ```json
     {
       "userId": "user001",
@@ -37,7 +37,7 @@ This project demonstrates JWT (JSON Web Token) generation, validation, and reiss
 ### 3. Reissue JWT
 - **POST /api/v1/jwt/reissuance**
 - **Description:** Reissues new access and refresh tokens using the provided valid refresh token.
-- **Request Body:**
+- **Response:**
     ```json
     {
       "userId": "user001",
