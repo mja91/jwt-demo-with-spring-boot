@@ -38,7 +38,7 @@ public class JwtDemoController {
     }
 
     @PostMapping("/reissuance")
-    public ResponseEntity<TokenResponse> reissuanceJwt(@RequestBody TokenRequest tokenRequest) {
+    public ResponseEntity<TokenResponse> reissueJwt(@RequestBody TokenRequest tokenRequest) {
         final String clientRefreshToken = tokenRequest.getToken();
         if (!JwtUtil.validateJwt(clientRefreshToken, TokenType.REFRESH)) {
             return new ResponseEntity<>(null, HttpStatus.UNAUTHORIZED);
