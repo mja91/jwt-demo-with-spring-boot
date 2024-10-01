@@ -3,8 +3,8 @@
 This project demonstrates JWT (JSON Web Token) generation, validation, and reissuance using Spring Boot and the jjwt library. It includes both Access Token and Refresh Token management for user authentication, using Refresh Token Rotation (RTR) to securely renew tokens when the access token expires.
 
 ## Tech Stack
-- Spring Boot
-- Java JWT (`jjwt-api`, `jjwt-impl`, `jjwt-jackson`)
+- Spring Boot v2.7.0 (Java 1.8)
+- jjwt (`jjwt-api-0.11.5`, `jjwt-impl-0.11.5`, `jjwt-jackson-0.11.5`)
 - Lombok
 
 ## API Endpoints
