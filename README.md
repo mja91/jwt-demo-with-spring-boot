@@ -30,7 +30,7 @@ This project demonstrates JWT (JSON Web Token) generation, validation, and reiss
 - **Request Body:**
     ```json
     {
-      "token" : "<token>",
+      "token" : "<access_token or refresh token>",
       "type" : "ACCESS or REFRESH"
     }
     ```
@@ -38,7 +38,7 @@ This project demonstrates JWT (JSON Web Token) generation, validation, and reiss
     ```json
     {
       "userId": "user001",
-      "token": "<token>",
+      "token": "<access_token or refresh token>",
       "active": true
     }
     ```
@@ -49,7 +49,7 @@ This project demonstrates JWT (JSON Web Token) generation, validation, and reiss
 - **Request Body:**
     ```json
     {
-      "token" : "<token>"
+      "token" : "<refresh_token>"
     }
     ```
 - **Response:**
